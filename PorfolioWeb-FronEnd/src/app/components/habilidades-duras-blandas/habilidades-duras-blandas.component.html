@@ -1,0 +1,28 @@
+<div class="container-fluid ">
+  <div>
+    <h1> HARD & SOFT SKILLS</h1>
+    <div class=" row  col-lg-12 col-md-12     ">
+      <p id="agregar"> <button type="button" class="btn btn-dark" routerLink="/nuevahabi" *ngIf="isLogged">
+          Agregar
+        </button> </p>
+    </div>
+    <div>
+      <tr *ngFor="let HabilidadesDurasYBlandas of habilidadesdurasyblandasss "
+        class=" col-5 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3 ">
+        <div class="  circulos     ">
+          <div>
+            <circle-progress [percent]="(HabilidadesDurasYBlandas.porcentajeHabi)" [radius]="100" [showImage]="true"
+              [imageSrc]="(HabilidadesDurasYBlandas.imagenHabi)" [imageHeight]="91" [imageWidth]="91"
+              [outerStrokeWidth]="23" [innerStrokeWidth]="12" [outerStrokeColor]="' #d12115  '"
+              [innerStrokeColor]="' #C7E596   '" [animation]="true" [animationDuration]="600"></circle-progress>
+          </div>
+        </div>
+        <button type="button" class="btn btn-light" routerLink="/edithabi/{{HabilidadesDurasYBlandas.idHabi}}"
+          *ngIf="isLogged">
+          <i class="bi bi-pencil-fill"></i>Editar</button>
+        <button type="button" class="btn btn-danger"
+          (click)="deleteHabilidadesDurasYBlandas(HabilidadesDurasYBlandas.idHabi)" *ngIf="isLogged">
+          <i class="bi bi-trash-fill"></i>Borrar</button>
+    </div>
+  </div>
+</div>

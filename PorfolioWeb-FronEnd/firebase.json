@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/porfolio-web-fron-end",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

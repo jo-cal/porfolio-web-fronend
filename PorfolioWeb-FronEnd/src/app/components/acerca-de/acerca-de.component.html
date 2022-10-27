@@ -1,0 +1,31 @@
+
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-lg-1 agregar">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoace" *ngIf="isLogged">
+          Agregar
+        </button>
+      </div>
+      <tr *ngFor="let Persona of personas">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2">
+            <img src={{Persona.imagenPer}} class="img-fluid" id="imagen" alt="imagen">
+          </div>
+          <div class="  col-12 col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2              ">
+            <p id="datos">{{Persona.datosPer}}</p>
+          </div>
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7      ">
+            <span>
+              <h1>ACERCA DE ...</h1>
+              <p id="descripcion">{{Persona.descripcionPer}} </p>
+            </span>
+          </div>
+          <div class="col-lg-1 ">
+            <button type="button" class="btn btn-light  " routerLink="/editace/{{Persona.idPer}}" *ngIf="isLogged">
+              <i class="bi bi-pencil-fill"></i>Editar</button>
+            <button type="button" class="btn btn-danger" (click)="deletePersona(Persona.idPer)" *ngIf="isLogged">
+              <i class="bi bi-trash-fill"></i>Borrar</button>
+          </div>
+        </div>
+    </div>
+  </div>

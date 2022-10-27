@@ -1,0 +1,31 @@
+<div class="col-md-5 offset-md-1">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <input type="text" name="datos" [(ngModel)]="persona.datosPer"  placeholder="Datos" class="form-control" autofocus>
+        </div>
+  <br>
+        <div class="form-group  ">
+          <textarea name="description" [(ngModel)]="persona.descripcionPer"     placeholder="Description" cols="50" rows="7"   class="from-control" ></textarea>
+        </div>
+  <br>
+        <div class="form-group" >
+          <input type="url" name="image"  [(ngModel)]="persona.imagenPer"     placeholder="Image"    class="form-control"  autofocus>
+        </div>
+  <br>
+        <button  class="btn btn-success btn-block"  type="button"   (click)=" edit ? updatePersona() : saveNewPersona()" > SAVE </button>
+      </form>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <div class="col-md-4  offset-md-1 ">
+    <div class="card card-body text-center">
+    <img [src]="persona.imagenPer == '' ? '/assets/imagen por defecto en el formulario.png' : persona.imagenPer" alt="No Image" class="card-img-top">
+      <h3>{{persona.idPer}}. {{persona.datosPer  == '' ? 'Persona Datos' : persona.datosPer}}</h3>
+      <p>{{persona.descripcionPer == '' ? ' Escribe tu descripcion' : persona.descripcionPer}}</p>
+    </div>
+  </div>
+

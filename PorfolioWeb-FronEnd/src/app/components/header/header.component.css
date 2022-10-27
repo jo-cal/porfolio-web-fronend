@@ -1,0 +1,96 @@
+/*.container-fluid{
+  width: 100%;
+
+  }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+.cabecera { width:100%; max-width: 2000px; margin: o auto ;
+background-color: aquamarine  ; border: 7px solid #777; }
+
+
+
+#boton-contacto {margin-left: 0px;
+  width: 100px;
+  box-shadow: 22px  22px  50px        #010810;
+  box-shadow: ejex  ejey  difumacion  color;
+  border-radius: 100%;
+
+
+
+}
+
+
+.btn{
+  margin-left: 0px;
+  width: 100px;
+  box-shadow: 22px  22px  50px        #010810;
+  box-shadow: ejex  ejey  difumacion  color;
+  border-radius: 100%;
+  background-color: #a10411;
+
+
+
+}
+
+img{
+  width: 200px;
+  box-shadow: 22px  22px  50px        #010810;
+  box-shadow: ejex  ejey  difumacion  color;
+  border-radius: 100%;
+
+}
+
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*@media(  min-width: 576px  ){
+
+  .container-fluid{
+    flex-direction: column;
+  }
+
+  .navbar-brand   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn,#boton-contacto  {
+    margin-left: 0px;
+  }
+
+  }*/
+
+ /*@media(max-width: 575px){
+
+    .container-fluid{
+      flex-direction: column;
+    }
+
+    .navbar-brand   {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn,#boton-contacto  {
+      margin-left: 0px;
+    }
+
+
+    }*/
+
+
+
+
+
+
+
+

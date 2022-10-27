@@ -1,0 +1,133 @@
+.container-fluid{
+  padding: 20px ;
+  width:100%;
+  background-color: #a6b109;
+  border: 7px solid rgb(222, 106, 11);
+  box-shadow: 50px  50px  50px        #010810;
+  box-shadow: ejex  ejey  difumacion  color;
+}
+
+
+
+#descripcion{
+  display: inline-block;
+  text-align: justify;
+  font-weight:bold;
+  margin-right: 3px;
+}
+
+#titulo{
+  display: inline-block;
+  text-align: fill;
+ /* text-align: justify;*/
+  font-weight:bold;
+}
+
+
+#img-proyecto{
+  box-shadow: 10px  10px  30px        #010810;
+  box-shadow: ejex  ejey  difumacion  color;
+  border-radius: 100%;
+  object-fit: contain;
+  object-position: 15% 100%;
+  left: 1%;
+}
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+table{
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: #333;
+  color: #fff;
+}
+
+th, td{
+  padding: .8rem;
+  font-size: 1.4rem;
+}
+
+tbody{
+  /*background-color: #eee;*/
+  color: #555;
+}
+
+
+@media screen and (max-width: 730px){
+  /*thead{
+    display: none;
+  }*/
+
+  td{
+    display: block;
+  }
+
+  td:first-child{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+  td:nth-child(2)::before{
+    content: "";
+  }
+
+  td:nth-child(3)::before{
+    content: "";
+  }
+
+  td:nth-child(4)::before{
+    content: "";
+  }
+
+  td:nth-child(5)::before{
+    content: "";
+  }
+
+  td{
+    text-align: center;
+    /*text-align: right;*/
+  }
+
+  td::before{
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+}
+
+
+
+
+     /* estilo para la imagen
+@media(min-width: 576px){
+  #imagen-proyecto{
+    box-shadow: 10px  10px  30px        #010810;
+    box-shadow: ejex  ejey  difumacion  color;
+    border-radius: 100%;
+    object-fit: contain;
+    object-position: 15% 100%;
+    left: 10%;
+  }
+  }
+
+  @media(max-width: 575px){
+    #imagen-proyecto{
+    box-shadow: 10px  10px  30px        #010810;
+    box-shadow: ejex  ejey  difumacion  color;
+    border-radius: 100%;
+    object-fit: contain;
+    object-position: 15% 100%;
+    left: 10%;
+    }
+    }  */

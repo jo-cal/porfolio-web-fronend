@@ -1,0 +1,37 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <h1>EDUCACION</h1>
+    <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        Agregar
+      </button>
+    </div>
+    <table class="table   table-bordered   table-hover  ">
+      <tbody>
+        <tr *ngFor="let Educacion of educaciones">
+          <td class="col-12  col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+            <img class="img-fluid " id="img-educacion" [src]="Educacion.imagenEdu" alt="imagen">
+            <div class="col-lg-1">
+          <td>
+            <button type="button" class="btn btn-light" routerLink="/editedu/{{Educacion.idEdu}}" *ngIf="isLogged">
+              <i class="bi bi-pencil-fill"></i>Editar</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger" (click)="deleteEducacion(Educacion.idEdu)" *ngIf="isLogged">
+              <i class="bi bi-trash-fill"></i>Borrar
+            </button>
+          </td>
+  </div>
+  </td>
+  <td class="col-12  col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+    <h3 id="titulo">{{Educacion.tituloEdu}}</h3>
+  </td>
+  <td class="col-12  col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 ">
+    <p id="descripcion">{{Educacion.descripcionEdu}}</p>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+</div>

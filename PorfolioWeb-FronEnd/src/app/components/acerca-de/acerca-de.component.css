@@ -1,0 +1,66 @@
+.container-fluid{
+  width: 100%;
+
+}
+
+
+.row {
+  padding: 10px ;
+  background-color: #a6b109;
+  border: 7px solid rgb(11, 206, 128);
+  box-shadow: 50px  50px  50px        #010810;
+  box-shadow: ejex  ejey  difumacion  color;
+}
+
+
+
+#datos{
+  font-weight:bold;
+  margin-top: 0%;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.agregar{
+  margin-top: 50px;
+}
+
+#descripcion{
+  text-align: justify;
+  font-weight:bold;
+
+}
+
+
+
+/* estilo para la imagen  min-width: 576px   max-width: 575px   */
+@media(min-width: 736px){
+#imagen{
+  position:absolute;
+  width:24%;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px grey;
+  left: 1%;
+  top: 698px;
+}
+#descripcion{
+  margin-left: 0px ;
+
+}
+
+
+
+}
+
+@media(max-width: 735px){
+  #imagen{
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+  }
+
+
+  }
+
+
+
+
